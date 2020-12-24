@@ -91,4 +91,4 @@ do
   esac
 done
 echo 
-echo -e $G$L "installation completed"$N"\n"
+echo $G$L"installation completed"$N"\n"
