@@ -18,8 +18,8 @@ L='\033[7m' > /dev/null 2>&1; #Lines
 X='\033[0m' > /dev/null 2>&1; #Closer
 # ----------------------------------------
 clear
-echo "------------------------------------------------"
-echo "\n"           
+echo "\n------------------------------------------------\n"
+           
 echo -e $R"        _    _    ____   ___   ___"$N
 sleep 0.3
 echo -e $R"       / \  | | _| ___| / _ \ / _ \ "$N
@@ -67,7 +67,7 @@ echo $G"4.Install Vim\n"$N
 echo $G"5.Install root-repo\n"$N
 echo $G"6.Install x11-repo\n"$N
 echo $G"7.Install Figlet\n"$N
-echo $G"8.Fix-broken instal\n"$Nl
+echo $G"8.Fix-broken install\n"$Nl
 echo $G"9.Exit"$N
 
 
