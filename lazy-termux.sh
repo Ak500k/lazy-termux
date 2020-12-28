@@ -17,9 +17,45 @@ N='\e[0m' > /dev/null 2>&1; # Null
 L='\033[7m' > /dev/null 2>&1; #Lines
 X='\033[0m' > /dev/null 2>&1; #Closer
 # ----------------------------------------
+clear
+echo "------------------------------------------------"
+echo "\n"           
+echo -e $R"        _    _    ____   ___   ___"$N
+sleep 0.3
+echo -e $R"       / \  | | _| ___| / _ \ / _ \ "$N
+sleep 0.3            
+echo -e $R"      / _ \ | |/ /___ \| | | | | | |"$N
+sleep 0.3          
+echo -e $R"     / ___ \|   < ___) | |_| | |_| |"$N
+sleep 0.3
+echo -e $R"    /_/   \_\_|\_\____/ \___/ \___/"$N
+
+
+echo "\n------------------------------------------------\n"
+
+sleep 1.5
+clear
 
 
 
+echo "\n-----------------------------------------------------------\n"
+
+echo -e $R"   _                       _                                " $N
+sleep 0.3
+echo -e $R"  | | __ _ _____   _      | |_ ___ _ __ _ __ ___  _   ___  __"$N
+sleep 0.3
+echo -e $R"  | |/ _' |_  / | | |_____| __/ _ \ '__| '_ ' _ \| | | \ \/ / "$N
+sleep 0.3
+echo -e $R"  | | (_| |/ /| |_| |_____| ||  __/ |  | | | | | | |_| |>  < "$N
+sleep 0.3
+echo -e $R"  |_|\__,_/___|\__, |      \__\___|_|  |_| |_| |_|\__,_/_/\_\ "$N
+sleep 0.3
+echo -e $R"               |___/ "$N
+sleep 0.3
+
+echo "\n-----------------------------------------------------------"
+
+sleep 1.5
 
 
 
@@ -34,6 +70,7 @@ echo $G"7.Install Figlet\n"$N
 echo $G"8.Fix-broken instal\n"$Nl
 echo $G"9.Exit"$N
 
+
 while :
 do
   echo "\n"
@@ -47,7 +84,7 @@ do
 
 	  2)
 
-		echo "\n"$Y$L" Installing Python... "$G" Ak500 " $N
+		echo "\n"$Y$L" Installing Python... " $G" Ak500 " $N
 		apt install python -y
 		
 		;;
