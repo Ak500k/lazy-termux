@@ -73,7 +73,7 @@ echo -e $G"9.Exit"$N
 
 while :
 do
-  echo "\n"
+  echo -e "\n"
   read INPUT_STRING
   case $INPUT_STRING in
 
@@ -123,7 +123,7 @@ do
 		;;
 	  *)
 
-		echo -e "\n"$R" Worng input \n"$N
+		echo -e $R"\n Worng input \n"$N
 		;;
   esac
 done
