@@ -74,7 +74,7 @@ echo -e $G"9.Exit"$N
 while :
 do
   echo -e "\n"
-  read -e INPUT_STRING
+  read INPUT_STRING
   case $INPUT_STRING in
 
 	  1)
@@ -121,9 +121,10 @@ do
 		echo -e "\n"$G" Thank You \n"$N
 		break
 		;;
+		
 	  *)
-
-		echo -e $R"\n Worng input \n"$N
+	     
+	       echo -e $R"\n Worng input \n"$N
 		;;
   esac
 done
