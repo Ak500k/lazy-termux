@@ -74,7 +74,7 @@ echo -e $G"9.Exit"$N
 while :
 do
   echo -e "\n"
-  read INPUT_STRING
+  read -e INPUT_STRING
   case $INPUT_STRING in
 
 	  1)
