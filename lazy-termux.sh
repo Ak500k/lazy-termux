@@ -18,7 +18,7 @@ L='\033[7m' > /dev/null 2>&1; #Lines
 X='\033[0m' > /dev/null 2>&1; #Closer
 # ----------------------------------------
 clear
-echo "\n------------------------------------------------\n"
+echo -e "\n------------------------------------------------\n"
            
 echo -e $R"        _    _    ____   ___   ___"$N
 sleep 0.3
@@ -31,14 +31,14 @@ sleep 0.3
 echo -e $R"    /_/   \_\_|\_\____/ \___/ \___/"$N
 
 
-echo "\n\n------------------------------------------------\n"
+echo -e "\n\n------------------------------------------------\n"
 
 sleep 1.5
 clear
 
 
 
-echo "\n-----------------------------------------------------------\n"
+echo -e "\n-----------------------------------------------------------\n"
 
 echo -e $R"   _                       _                                " $N
 sleep 0.3
@@ -53,22 +53,22 @@ sleep 0.3
 echo -e $R"               |___/ "$N
 sleep 0.3
 
-echo "\n-----------------------------------------------------------"
+echo -e "\n-----------------------------------------------------------"
 
 sleep 1.5
 
 
 
-echo $Y$L"\n Enter Your Choice : \n"$N
-echo $G"1.Update & Upgrage\n"$N
-echo $G"2.Install Python\n"$N
-echo $G"3.Install Git\n"$N
-echo $G"4.Install Vim\n"$N
-echo $G"5.Install root-repo\n"$N
-echo $G"6.Install x11-repo\n"$N
-echo $G"7.Install Figlet\n"$N
-echo $G"8.Fix-broken install\n"$Nl
-echo $G"9.Exit"$N
+echo -e $Y$L"\n Enter Your Choice : \n"$N
+echo -e $G"1.Update & Upgrage\n"$N
+echo -e $G"2.Install Python\n"$N
+echo -e $G"3.Install Git\n"$N
+echo -e $G"4.Install Vim\n"$N
+echo -e $G"5.Install root-repo\n"$N
+echo -e $G"6.Install x11-repo\n"$N
+echo -e $G"7.Install Figlet\n"$N
+echo -e $G"8.Fix-broken install\n"$Nl
+echo -e $G"9.Exit"$N
 
 
 while :
@@ -78,54 +78,54 @@ do
   case $INPUT_STRING in
 
 	  1)
-		echo "\n"$Y$L" Updating... Termux "$N
+		echo -e "\n"$Y$L" Updating... Termux \n"$N
 		apt update && apt upgrade -y
 		;;
 
 	  2)
 
-		echo "\n"$Y$L" Installing Python... " $G" Ak500 " $N
+		echo -e "\n"$Y$L" Installing Python... " $G" Ak500 \n"$N
 		apt install python -y
 		
 		;;
 	  3) 
-		echo "\n"$Y$L" Installing Git... "$G" Ak500 " $N
+		echo -e "\n"$Y$L" Installing Git... "$G" Ak500 \n"$N
 		apt install git -y
 		;;
   	  4) 
-		echo  "\n"$Y$L" Installing Vim... "$G" Ak500 " $N
+		echo -e  "\n"$Y$L" Installing Vim... "$G" Ak500 \n"$N
 		apt install Vim -y
 		;;
 	
 	  5)
-		echo "\n"$Y$L" Installing root-repo... "$G" Ak500 "$N
+		echo -e "\n"$Y$L" Installing root-repo... "$G" Ak500 \n"$N
 		apt install root-repo
 		;;
 
 	  6)
-		echo "\n"$Y$L" Installing x11-repo... "$G" Ak500 "$N
+		echo -e "\n"$Y$L" Installing x11-repo... "$G" Ak500 \n"$N
 		apt install x11-repo
 		;;
 
 	  7) 
-		echo "\n"$Y$L" Installing Figlet... "$G" Ak500 "$N
+		echo -e "\n"$Y$L" Installing Figlet... "$G" Ak500 \n"$N
 		apt install figlet
 		;;
 
 	  8)
-		echo "\n"$Y$L" fixing-broken installation... "$G" Ak500 "$N
+		echo -e "\n"$Y$L" fixing-broken installation... "$G" Ak500 \n"$N
 		apt --fix-broken install
 		;;
 
 	  9)
-		echo "\n"$G" Thank You "$N
+		echo -e "\n"$G" Thank You \n"$N
 		break
 		;;
 	  *)
 
-		echo "\n"$R" Worng input "$N
+		echo -e "\n"$R" Worng input \n"$N
 		;;
   esac
 done
-echo 
-echo $G$L" installation completed "$N"\n"
+
+echo -e $G$L" installation completed \n"$N
