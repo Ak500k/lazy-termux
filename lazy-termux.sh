@@ -86,47 +86,47 @@ do
 
 	  2)
 
-		echo "$Y$L"\n Installing Python... " $G" Ak500 "$N"\n"
+		echo "$Y$L"\n Installing Python... " $G" Ak500 "$N "\n"
 		apt install python -y
 		
 		;;
 	  3) 
-		echo $Y$L"\n Installing Git... "$G" Ak500 "$N"\n"
+		echo $Y$L"\n Installing Git... "$G" Ak500 "$N "\n"
 		apt install git -y
 		;;
   	  4) 
-		echo "$Y$L"\n Installing Vim... "$G" Ak500 "$N"\n"
+		echo "$Y$L"\n Installing Vim... "$G" Ak500 "$N "\n"
 		apt install Vim -y
 		;;
 	
 	  5)
-		echo $Y$L"\n Installing root-repo... "$G" Ak500 "$N"\n"
-		apt install root-repo
+		echo $Y$L"\n Installing root-repo... "$G" Ak500 "$N "\n"
+		apt install root-repo -y
 		;;
 
 	  6)
-		echo $Y$L"\n Installing x11-repo... "$G" Ak500 "$N"\n"
-		apt install x11-repo
+		echo $Y$L"\n Installing x11-repo... "$G" Ak500 "$N "\n"
+		apt install x11-repo -y
 		;;
 
 	  7) 
-		echo $Y$L"\n Installing Figlet... "$G" Ak500 "$N"\n"
-		apt install figlet
+		echo $Y$L"\n Installing Figlet... "$G" Ak500 "$N "\n"
+		apt install figlet -y
 		;;
 
 	  8)
-		echo $Y$L"\n fixing-broken installation... "$G" Ak500 "$N"\n"
+		echo $Y$L"\n fixing-broken installation... "$G" Ak500 "$N "\n"
 		apt --fix-broken install
 		;;
 
 	  9)
-		echo $G"\n Thank You "$N"\n"
+		echo $G"\n Thank You "$N "\n"
 		break
 		;;
 		
 	  *)
 	     
-	       echo $R"\n Worng input "$N"\n"
+	       echo $R"\n Worng input "$N "\n"
 		;;
   esac
 done
