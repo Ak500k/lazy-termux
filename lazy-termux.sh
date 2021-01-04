@@ -115,7 +115,7 @@ do
 		;;
 
 	  8)
-		echo $Y$L"\n fixing-broken installation... "$G" Ak500 "$N
+		echo $Y$L"\n fixing-broken installation... "$G" Ak500"$N
 		apt --fix-broken install
 		;;
 
