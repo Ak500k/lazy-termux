@@ -69,7 +69,7 @@ echo $G"4.Install Vim\n"$N
 echo $G"5.Install root-repo\n"$N
 echo $G"6.Install x11-repo\n"$N
 echo $G"7.Install Figlet\n"$N
-echo $G"8.Fix-broken install\n"$Nl
+echo $G"8.Fix-broken install\n"$N
 echo $G"9.Exit"$N
 
 
@@ -80,55 +80,55 @@ do
   case $INPUT_STRING in
 
 	  1)
-		echo $Y$L"\n Updating... Termux "$N"\n"
+		echo $Y$L"\n Updating... Termux \n"$N
 		apt update && apt upgrade -y
 		;;
 
 	  2)
 
-		echo "$Y$L"\n Installing Python... " $G" Ak500 "$N "\n"
+		echo "$Y$L"\n Installing Python... " $G" Ak500 \n"$N
 		apt install python -y
 		
 		;;
 	  3) 
-		echo $Y$L"\n Installing Git... "$G" Ak500 "$N "\n"
+		echo $Y$L"\n Installing Git... "$G" Ak500 \n"$N
 		apt install git -y
 		;;
   	  4) 
-		echo "$Y$L"\n Installing Vim... "$G" Ak500 "$N "\n"
+		echo "$Y$L"\n Installing Vim... "$G" Ak500 \n"$N
 		apt install Vim -y
 		;;
 	
 	  5)
-		echo $Y$L"\n Installing root-repo... "$G" Ak500 "$N "\n"
+		echo $Y$L"\n Installing root-repo... "$G" Ak500 \n"$N
 		apt install root-repo -y
 		;;
 
 	  6)
-		echo $Y$L"\n Installing x11-repo... "$G" Ak500 "$N "\n"
+		echo $Y$L"\n Installing x11-repo... "$G" Ak500 \n"$N
 		apt install x11-repo -y
 		;;
 
 	  7) 
-		echo $Y$L"\n Installing Figlet... "$G" Ak500 "$N "\n"
+		echo $Y$L"\n Installing Figlet... "$G" Ak500 \n"$N
 		apt install figlet -y
 		;;
 
 	  8)
-		echo $Y$L"\n fixing-broken installation... "$G" Ak500 "$N "\n"
+		echo $Y$L"\n fixing-broken installation... "$G" Ak500 \n"$N
 		apt --fix-broken install
 		;;
 
 	  9)
-		echo $G"\n Thank You "$N "\n"
+		echo $G"\n Thank You \n"$N
 		break
 		;;
 		
 	  *)
 	     
-	       echo $R"\n Worng input "$N "\n"
+	       echo $R"\n Worng input \n"$N
 		;;
   esac
 done
 
-echo $G$L" installation completed "$N"\n"
+echo $G$L" installation completed \n"$N
