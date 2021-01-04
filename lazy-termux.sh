@@ -38,23 +38,24 @@ clear
 
 
 
-echo "\n--------------------------------------------------------------\n"
 
-echo $R"   _                       _                                " $N
+echo "\n-----------------------------------------------------------\n"
+
+
+echo -e $R"   _                       _                                " $N
 sleep 0.3
-echo $R"  | | __ _ _____   _      | |_ ___ _ __ _ __ ___  _   ___  __"$N
+echo -e $R"  | | __ _ _____   _      | |_ ___ _ __ _ __ ___  _   ___  __"$N
 sleep 0.3
-echo $R"  | |/ _' |_  / | | |_____| __/ _ \ '__| '_ ' _ \| | | \ \/ / "$N
+echo -e $R"  | |/ _' |_  / | | |_____| __/ _ \ '__| '_ ' _ \| | | \ \/ / "$N
 sleep 0.3
-echo $R"  | | (_| |/ /| |_| |_____| ||  __/ |  | | | | | | |_| |>  < "$N
+echo -e $R"  | | (_| |/ /| |_| |_____| ||  __/ |  | | | | | | |_| |>  < "$N
 sleep 0.3
-echo $R"  |_|\__,_/___|\__, |      \__\___|_|  |_| |_| |_|\__,_/_/\_\ "$N
+echo -e $R"  |_|\__,_/___|\__, |      \__\___|_|  |_| |_| |_|\__,_/_/\_\ "$N
 sleep 0.3
-echo $R"               |___/ "$N
+echo -e $R"               |___/ "$N
 sleep 0.3
 
-echo "\n--------------------------------------------------------------"
-
+echo "\n-----------------------------------------------------------\n"
 sleep 1.5
 
 
@@ -78,55 +79,55 @@ do
   case $INPUT_STRING in
 
 	  1)
-		echo $Y$L"\n Updating... Termux \n"$N
+		echo $Y$L"\n Updating... Termux "$N"\n"
 		apt update && apt upgrade -y
 		;;
 
 	  2)
 
-		echo "$Y$L"\n Installing Python... " $G" Ak500 \n"$N
+		echo "$Y$L"\n Installing Python... " $G" Ak500 "$N"\n"
 		apt install python -y
 		
 		;;
 	  3) 
-		echo $Y$L"\n Installing Git... "$G" Ak500 \n"$N
+		echo $Y$L"\n Installing Git... "$G" Ak500 "$N"\n"
 		apt install git -y
 		;;
   	  4) 
-		echo "$Y$L"\n Installing Vim... "$G" Ak500 \n"$N
+		echo "$Y$L"\n Installing Vim... "$G" Ak500 "$N"\n"
 		apt install Vim -y
 		;;
 	
 	  5)
-		echo $Y$L"\n Installing root-repo... "$G" Ak500 \n"$N
+		echo $Y$L"\n Installing root-repo... "$G" Ak500 "$N"\n"
 		apt install root-repo
 		;;
 
 	  6)
-		echo $Y$L"\n Installing x11-repo... "$G" Ak500 \n"$N
+		echo $Y$L"\n Installing x11-repo... "$G" Ak500 "$N"\n"
 		apt install x11-repo
 		;;
 
 	  7) 
-		echo $Y$L"\n Installing Figlet... "$G" Ak500 \n"$N
+		echo $Y$L"\n Installing Figlet... "$G" Ak500 "$N"\n"
 		apt install figlet
 		;;
 
 	  8)
-		echo $Y$L"\n fixing-broken installation... "$G" Ak500 \n"$N
+		echo $Y$L"\n fixing-broken installation... "$G" Ak500 "$N"\n"
 		apt --fix-broken install
 		;;
 
 	  9)
-		echo $G"\n Thank You \n"$N
+		echo $G"\n Thank You "$N"\n"
 		break
 		;;
 		
 	  *)
 	     
-	       echo $R"\n Worng input \n"$N
+	       echo $R"\n Worng input "$N"\n"
 		;;
   esac
 done
 
-echo $G$L" installation completed \n"$N
+echo $G$L" installation completed "$N"\n"
