@@ -86,7 +86,7 @@ do
 
 	  2)
 
-		echo "$Y$L"\n Installing Python... " $G" Ak500 "$N
+		echo $Y$L"\n Installing Python... " $G" Ak500 "$N
 		apt install python -y
 		
 		;;
@@ -95,7 +95,7 @@ do
 		apt install git -y
 		;;
   	  4) 
-		echo "$Y$L"\n Installing Vim... "$G" Ak500 "$N
+		echo $Y$L"\n Installing Vim... "$G" Ak500 "$N
 		apt install Vim -y
 		;;
 	
